@@ -38,9 +38,10 @@ import com.google.android.libraries.places.api.model.TypeFilter;
 import com.google.android.libraries.places.api.net.PlacesClient;
 import com.google.android.libraries.places.widget.Autocomplete;
 import com.google.android.libraries.places.widget.model.AutocompleteActivityMode;
+import com.google.android.material.snackbar.BaseTransientBottomBar;
 import com.google.android.material.snackbar.Snackbar;
-import com.varshavikshith.utilsfunctios.helper.NetworkUtils;
-import com.varshavikshith.utilsfunctios.helper.SuccessResultListener;
+import com.varshavikshith.utilsfunctions.helper.NetworkUtils;
+import com.varshavikshith.utilsfunctions.helper.SuccessResultListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -153,7 +154,7 @@ public class UtilFunctions {
     public static void gotoScreenSnackBar(final Activity activity, String buttonText, String subject, View viewDisplay, final Intent intent) {
         try {
             Snackbar snackbar1 = Snackbar.make(viewDisplay, subject, Snackbar.LENGTH_LONG);
-            snackbar1.setDuration(Snackbar.LENGTH_INDEFINITE);
+            snackbar1.setDuration(BaseTransientBottomBar.LENGTH_INDEFINITE);
             snackbar1.setAction(buttonText, new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

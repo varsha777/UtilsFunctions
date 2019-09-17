@@ -9,7 +9,7 @@ import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 import android.view.View;
 
-import com.varshavikshith.utilsfunctios.UtilFunctions;
+import com.varshavikshith.utilsfunctions.UtilFunctions;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
