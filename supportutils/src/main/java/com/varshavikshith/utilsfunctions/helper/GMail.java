@@ -65,13 +65,11 @@ public class GMail {
         emailMessage = new MimeMessage(mailSession);
 
         emailMessage.setFrom(new InternetAddress(fromEmail, fromEmail));
-        for (String toEmail : toEmailList) {
             emailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("support@travelize.in"));
             emailMessage.addRecipient(Message.RecipientType.CC, new InternetAddress("madhu.koul@lobotus.co.in"));
             emailMessage.addRecipient(Message.RecipientType.BCC, new InternetAddress("vikshith@lobotus.co.in"));
             emailMessage.addRecipient(Message.RecipientType.BCC, new InternetAddress("varsha@lobotus.co.in"));
-            emailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("vikshith@lobotus.co.in"));
-        }
+        
 
         emailMessage.setSubject(emailSubject);
 
