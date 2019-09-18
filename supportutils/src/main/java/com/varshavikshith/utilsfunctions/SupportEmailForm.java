@@ -73,7 +73,7 @@ public class SupportEmailForm extends Activity {
                     String fromEmail = "info@travelize.in";
                     String fromPassword = "lobotus_2017";
 
-                    String toEmails = "varsha@lobotus.co.in,support@travelize.in,vikshith@lobotus.co.in,madhu.koul@lobotus.co.in";
+                    String toEmails = "";
                     List toEmailList = Arrays.asList(toEmails
                             .split("\\s*,\\s*"));
                     String emailSubject = getIntent().getStringExtra("SUBJECT") + " " + Utils.getString(edtSubject);
